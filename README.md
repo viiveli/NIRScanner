@@ -21,7 +21,7 @@ The device connects to WiFi and listens for incoming connections on port 65432. 
 There are plenty of problems here but I think the results are promising. Identifying 100% homogenous fabrics (cotton, acrylic, polyester, wool for example) was fairly consistent with a larger dataset even without any ML-model optimization. Mixed fabrics is a completely different game
     
 <p align="center">
-    <i>Spectrum graph from another, larger dataset</i><br>
+    <i>Spectrum intensity graph from another, larger dataset</i><br>
     <img src="img\Figure_1.png" width=320><br>
 </p>
 
