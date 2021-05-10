@@ -20,11 +20,11 @@ The device connects to WiFi and listens for incoming connections on port 65432. 
 </p>
 
 ## If if's and buts were candy and nuts...
-There are plenty of problems here but I think the results are promising. Identifying 100% homogenous fabrics (cotton, acrylic, polyester, wool for example) was fairly consistent with a larger dataset even without any ML-model optimization. Mixed fabrics is a completely different game
+There are plenty of problems here but I think the results are promising. Identifying 100% homogenous fabrics (cotton, acrylic, polyester, wool for example) was fairly consistent with a larger dataset even without any ML-model optimization. Mixed fabrics is a completely different game. The following graph gives an impression that the differences between fabrics are distinguishable even from data gathered with equipment worth about 50€.
     
 <p align="center">
     <i>Spectrum intensity graph from another, larger dataset</i><br>
-    <img src="img\Figure_1.png" width=320><br>
+    <img src="img\Figure_1.png" width=480><br>
 </p>
 
 ### Something to think about further down the road:
