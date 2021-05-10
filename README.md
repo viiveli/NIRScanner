@@ -2,13 +2,15 @@
 ## Ugly little red box that almost could
 This proof of concept project originated from a course I attended during the spring of 2020. The topic was "Machine vision and sensor technology" and the goal was to explore techniques which could be used to sort textile waste. I knew that NIR-spectrum analysis was already successfully implemented to do this kind of job, and I wanted to see if I could do it myself with utilizing [scikit-learn machine learning library](https://scikit-learn.org/) and affordable components available to me.
 
+**The whole project is a bit of a work in progress mess and is in desperate need of some redesign and work hours**
+
 The device is built around ESP32 devkit board running MicroPython and housed in a butt-ugly 3d printed box with an obsolete button on the side. 6-band NIR sensor was purchased from SparkFun and 1.5" OLED display module was recycled from previous projects.
 
 - SparkFun Spectral Sensor Breakout - AS7263 NIR (Qwiic): [https://www.sparkfun.com/products/14351](https://www.sparkfun.com/products/14351)
     - Drivers used: [https://github.com/jajberni/AS726X_LoPy](https://github.com/jajberni/AS726X_LoPy)
 - OLED display drivers: [https://github.com/mcauser/micropython-ssd1327](https://github.com/mcauser/micropython-ssd1327)
 
-The device connects to WiFi and listens for incoming connections on port 65432. Once the connection is established the device sends a JSON-formatted burst of data containing unique device id and normalized spectrum intensity data and then closes the connection. All the communication and data analysis is handled with a simple console client script.
+The device connects to WiFi and listens for incoming connections on port 65432. Once the connection with client software is established the device sends a JSON-formatted burst of data containing unique device id and normalized spectrum intensity data and then closes the connection. All the communication and data analysis is handled with a simple console client script.
 
 ## Pics
 <p align="center">
