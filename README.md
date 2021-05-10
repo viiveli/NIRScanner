@@ -10,7 +10,7 @@ The device is built around ESP32 devkit board running MicroPython and housed in 
     - Drivers used: [https://github.com/jajberni/AS726X_LoPy](https://github.com/jajberni/AS726X_LoPy)
 - OLED display drivers: [https://github.com/mcauser/micropython-ssd1327](https://github.com/mcauser/micropython-ssd1327)
 
-The device connects to WiFi and listens for incoming connections on port 65432. Once the connection with client software is established the device sends a JSON-formatted burst of data containing unique device id and normalized spectrum intensity data and then closes the connection. All the communication and data analysis is handled with a simple console client script.
+The device connects to WiFi and listens for incoming connections on port 65432. Once the connection with client software is established the device fires the sensor and sends back a JSON-formatted burst of data containing unique device id and normalized spectrum intensity data and then closes the connection. All the communication and data analysis is handled with a simple console client script.
 
 ## Pics
 <p align="center">
